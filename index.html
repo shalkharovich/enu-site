@@ -1,0 +1,130 @@
+<HTML>
+<HEAD>
+<TITLE> ENU </TITLE>
+<link rel="stylesheet" href="style.css">
+</HEAD>
+
+<BODY>
+
+<header>
+<div class="header-box">
+
+<div class="logo-box">
+<img src="logo.png">
+<H2>Еуразия ұлттық университеті</H2>
+</div>
+
+<div class="lang">
+<a href="#" onclick="changeLang('KZ')">KZ</a>
+<a href="#" onclick="changeLang('RU')">RU</a>
+<a href="#" onclick="changeLang('EN')">EN</a>
+</div>
+
+</div>
+</header>
+
+<!-- TILE MENU -->
+<div class="grid">
+
+<div class="tile" onclick="location.href='programs.html'">
+<div>
+<img src="book.png"><BR>
+Бағдарламалар
+</div>
+</div>
+
+<div class="tile" onclick="location.href='students.html'">
+<div>
+<img src="student.png"><BR>
+Студенттер
+</div>
+</div>
+
+<div class="tile" onclick="location.href='life.html'">
+<div>
+<img src="uni.png"><BR>
+Студенттік өмір
+</div>
+</div>
+
+<div class="tile" onclick="location.href='contact.html'">
+<div>
+📞<BR>
+Байланыс
+</div>
+</div>
+
+<div class="tile" onclick="location.href='masters.html'">
+<div>
+<img src="masters.png"><BR>
+Магистратура
+</div>
+</div>
+
+<div class="tile" onclick="location.href='rating.html'">
+<div>
+<img src="rating.png"><BR>
+Рейтинг
+</div>
+</div>
+
+<div class="tile" onclick="location.href='jobs.html'">
+<div>
+<img src="jobs.png"><BR>
+Жұмыс
+</div>
+</div>
+
+<div class="tile" onclick="location.href='achievements.html'">
+<div>
+<img src="ach.png"><BR>
+Жетістіктер
+</div>
+</div>
+
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+<button onclick="showTab('news')" class="active">Жаңалықтар</button>
+<button onclick="showTab('ads')">Хабарландыру</button>
+<button onclick="showTab('events')">Іс-шаралар</button>
+</div>
+
+<!-- NEWS -->
+<div id="news">
+<div class="news"><H3>2026</H3><P>ENU студенттері халықаралық олимпиадада жеңді</P></div>
+<div class="news"><H3>ЖИ орталығы</H3><P>Жасанды интеллект зертханасы ашылды</P></div>
+<div class="news"><H3>Грант</H3><P>1000 жаңа грант бөлінді</P></div>
+<div class="news"><H3>Startup</H3><P>Студенттер IT компания құрды</P></div>
+<div class="news"><H3>Халықаралық</H3><P>Шетелдік профессорлар келді</P></div>
+</div>
+
+<!-- ADS -->
+<div id="ads" style="display:none;">
+<div class="news"><H3>Стипендия</H3><P>Өтініш қабылдау басталды</P></div>
+<div class="news"><H3>Құжат</H3><P>Құжат тапсыру жалғасуда</P></div>
+</div>
+
+<!-- EVENTS -->
+<div id="events" style="display:none;">
+<div class="news"><H3>Форум</H3><P>IT форум 2026 өтеді</P></div>
+<div class="news"><H3>Хакатон</H3><P>48 сағат coding жарыс</P></div>
+</div>
+
+<!-- JS -->
+<script>
+function showTab(tab){
+document.getElementById('news').style.display='none';
+document.getElementById('ads').style.display='none';
+document.getElementById('events').style.display='none';
+document.getElementById(tab).style.display='block';
+}
+
+function changeLang(lang){
+alert("Сайт тілі: "+lang);
+}
+</script>
+
+</BODY>
+</HTML>

@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #eef2f5;
+}
+
+/* HEADER */
+header {
+    background:  linear-gradient(90deg, #003366, #007BFF);
+    color: white;
+    padding: 20px;
+}
+
+/* HEADER FLEX */
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo-box img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+/* LANGUAGE */
+.lang a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/* TILE */
+.tile {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    background: linear-gradient(135deg, #2c78b3, #3fa2e0);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tile:hover {
+    transform: scale(1.1);
+}
+
+/* ICON */
+.tile img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* NEWS */
+.tabs {
+    text-align: center;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background: #ddd;
+}
+
+.tabs .active {
+    background: #2c78b3;
+    color: white;
+}
+
+.news {
+    background: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}.tile {
+    position: relative;
+    overflow: hidden;
+}
+
+.tile::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+}
+
+.tile:hover::after {
+    left: 0;
+}.tile img {
+    width: 70px;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+}.news {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}.button {
+    background: #2c78b3;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}.tile img {
+    width: 70px;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+}
