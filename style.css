@@ -134,4 +134,8 @@ header {
     background: white;
     border-radius: 50%;
     padding: 10px;
+}.slider img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
